@@ -19,7 +19,7 @@
       <header class="header">
         <h1 class="sr-only">Base Apparel - product preview</h1>
         <picture class="logo-container">
-          <img src="images/logo.svg" alt="" aria-hidden="true" class="logo" height="21px" />
+          <img src="images/logo.svg" alt="" aria-hidden="true" class="logo" height="21" />
         </picture>
       </header>
 
@@ -36,20 +36,26 @@
         </p>
 
         <form id="form">
-          <legend class="sr-only">Please enter your email</legend>
-          <div class="form-group">
-            <label for="email" class="invalid-input">Please provide a valid email</label>
-            <input
-              title="must be a valid email address"
-              pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9 -]+\.[a-z]{2,}"
-              id="email"
-              type="email"
-              placeholder="Email address" />
-            <img src="images/icon-error.svg" alt="" aria-hidden="true" class="warning" />
-          </div>
-          <button type="submit" class="btn-submit">
-            <img src="images/icon-arrow.svg" alt="" aria-hidden="true" />
-          </button>
+          <fieldset>
+            <legend class="sr-only">Please enter your email</legend>
+            <div class="form-group">
+              <div class="invalid-input">Please provide a valid email</div>
+              <label class="sr-only">Please provide a valid email</label>
+              <input
+                title="must be a valid email address"
+                pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9 -]+\.[a-z]{2,}"
+                id="email"
+                type="email"
+                placeholder="Email address" />
+              <img src="images/icon-error.svg" alt="" aria-hidden="true" class="warning" />
+            </div>
+            <button
+              type="submit"
+              class="btn-submit"
+              aria-label="Submit to be up-to-date with announcements">
+              <img src="images/icon-arrow.svg" alt="" aria-hidden="true" />
+            </button>
+          </fieldset>
         </form>
       </main>
     </div>
